@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgba(21, 20, 20, 0.678) url('food.png') center center fixed;
+    background-size: cover;
+    background-blend-mode: darken;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container h1 {
+    color: #fff;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    display: inline-block;
+    padding: 18px;
+    text-transform: uppercase;
+}
+
+.navbar ul li a {
+    text-align: none;
+    color: #fff;
+    padding: 4px;
+    transition: 3.5s;
+}
+
+.navbar ul li a:hover {
+    box-shadow: 0 3px 50px orangered inset, 0 3px 50px orangered inset, 0 3px 50px orangered inset, 0 3px 50px orangered inset;
+}
+
+.navbar .reservation {
+    padding: 8px;
+}
+
+.content {
+    position: absolute;
+    color: #fff;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.content h3,
+.content h1,
+.content p {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.search {
+    position: absolute;
+    top: 70%; /* Adjust the vertical position */
+    left: 47%;
+    transform: translateX(-50%);
+}
+
+.search input {
+    outline: none;
+    border: none;
+    padding: 12px 40px;
+    size: 1em;
+    width: 100%;
+}
+
+.submit {
+    position: absolute;
+    top: 85%; /* Adjust the vertical position */
+    left: 49%;
+    
+    transform: translateX(-50%);
+}
+
+.submit a {
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 25px;
+    background-color: orangered;
+}
